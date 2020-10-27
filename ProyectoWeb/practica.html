@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuacion de segundo grado</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src = "scripts/operacion.js"></script>
+ </head>
+ <body>
+     <header class="header">
+         <nav class="menu">
+             <ul>
+                 <li>   <a class="link" href="index.html">INICIO</a>   </li>
+                 <li>   <a class="link" href="#">PRACTICA</a>  </li>
+             </ul>
+         </nav>
+     </header>
+     <div class="contenedor" style="padding-left: 15px;">
+        <section>
+            <h1>BIENVENIDOS</h1>
+            <h3>Digita a b y c para resolver la ecuacion recuerda que <strong color="black">"a" debe ser diferente de 0 (a!=0)</strong><br /></h3>
+              <br>
+        </section>
+        <div class="form-container" style="width: 250px;">
+            <form id="registro" name="registro" action="#">
+                <div class="form-group">
+                    <small id="letra-help" class="form-text text-muted" style="color:white">Recuerda que a no puede valer cero </small><br / >
+                    <label for="a" >NUMERO a:</label>
+                    <input type="number" id="numero-a" name="numero-a" class="form-control" placeholder="Digita a"><br>
+                     <label for="b">NUMERO b:</label>
+                     <input type="number" id="numero-b" name="numero-b" class="form-control" placeholder="Digita b"><br> 
+                    <label>NUMERO c:</label>
+                    <input type="number" id="numero-c" name="numero-c" class="form-control" placeholder ="Digita c" style="color:black"> 
+                </div>
+            </form>
+            <center style="height: 100px;margin-top: 10px;color: white;"> <button class="btn btn-warning" onclick="calculaNumero()" >calcular</button> </center>
+            <div id="resultado">
+                Espera por el resultado 1
+            </div>
+            <div id="resultado2">
+                Espera por el resultado 2
+            </div>
+        </div>
+     </div>
+     <footer class="extra">
+         <center>
+            <p><h4>Puedes aprender mas en:</h4></p>
+            <p>Click<a href="https://www.youtube.com/watch?v=ZC67c5ar9mA&ab_channel=DanielCarreon" target="_blank"> aqui </a> para aprender mas</p>
+         </center>
+     </footer>
+ </body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!– Importante llamar antes a jQuery para que funcione bootstrap.min.js   –>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> <!– Llamamos al JavaScript  a través de CDN –>
+</html>
